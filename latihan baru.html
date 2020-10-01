@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompetensi Game Mobile</title> 
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4> Pendaftaran Kompetensi Game Mobile</h4>
+        </div>
+        <ul>
+            <li><a href="">Mobile legend</a></li>
+            <li><a href="">Pubg</a></li>
+            <li><a href="">Free Fire</a></li>
+            <li><a href="">Dragon nest</a></li>
+            <li><a href="">Dragon Raja</a></li>
+        </ul>
+        <div class="menu-garis">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>  
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="Nama">
+                <input type="text" placeholder="Nim">
+                <input type="text" placeholder="email">               
+                <input type="text" placeholder="No hp">
+                <button>create</button>
+                    <p class="message">
+                        lupa email ?<a href=" ">Klik</a>
+                    </p>
+            </form> 
+            <form action="" class="login-form">
+                <input class="text" placeholder="Email anda">
+                <input class="text" placeholder="Email pemulihan">
+                <input class="text" placeholder="No Hp">
+                <button>login</button>
+                <p class="message"> Not registered ? <a href="#">registered</a></p>
+                </form>    
+         </div>
+    </div>
+    <script type="text/javascript"> src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    $(' .message a').click(function(){
+        $('form').animate({
+            height : "toggle",
+            opacity : "toggle"
+        }, "slow");
+    });
+    </script>
+</body>
+</html>

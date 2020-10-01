@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(ml1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    align-items: center;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+
+    color: rgb(204, 167, 112);
+    text-decoration: none;
+}
+.menu-garis {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-garis input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+}
+.menu-garis span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: whitesmoke;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 675px) {
+    nav ul {
+        display: none;
+    }
+}
+
+.login-page {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.form{
+    position: relative;
+    background: rgba(108, 121, 179, 0.8);
+    max-width: 360px;
+    z-index: 1;
+    margin: 0 auto 100px;
+    padding: 75px 45px 45px;
+    text-align: center;
+    border-radius: 15px;
+    height: 350px;
+}
+
+.form input{
+    font-family: sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color:rgb(84,84,87);
+    border-radius: 5px;
+}
+
+.form button {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4caf50;
+    width: 100%;
+    border: 0;
+    padding:15px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.form button:hover,
+.form button:active{
+    background: black;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.form .message a{
+    color: #4caf50;
+    text-decoration: none;
+
+}
+
+.form .register-form{
+    display: none;
+}
